@@ -1,10 +1,13 @@
 import './App.css';
-import userData from './data/user.json';
+import Section from './Сomponents/Section/Section';
 import Profile from './Сomponents/Profile/Profile';
+import Statistics from './Сomponents/Statistics/Statistics';
+import userData from './data/user.json';
+import statisticData from './data/statistics.json';
 
 function App() {
   return (
-    <div className="App">
+    <Section classNames="userCard">
       <Profile
         avatar={userData.avatar}
         tag={userData.tag}
@@ -12,7 +15,9 @@ function App() {
         location={userData.location}
         stats={userData.stats}
       />
-    </div>
+
+      <Statistics title="Upload stats" stats={statisticData} />
+    </Section>
   );
 }
 
