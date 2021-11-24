@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Profile
-        src={userData.avatar}
+        avatar={userData.avatar}
         tag={userData.tag}
         username={userData.username}
         location={userData.location}
