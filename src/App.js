@@ -1,6 +1,6 @@
 import './App.css';
 import userData from './data/user.json';
-import Profile from './Сomponents/Profile/Profile.js';
+import Profile from './Сomponents/Profile/Profile';
 
 function App() {
   return (
@@ -10,9 +10,7 @@ function App() {
         tag={userData.tag}
         username={userData.username}
         location={userData.location}
-        followers={userData.stats.followers}
-        views={userData.stats.views}
-        likes={userData.stats.likes}
+        stats={userData.stats}
       />
     </div>
   );
