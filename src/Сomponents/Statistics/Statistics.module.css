@@ -1,5 +1,4 @@
 .statistics {
-  /* display: flex; */
   width: 350px;
   margin: 25px auto 25px auto;
   justify-content: center;
@@ -28,7 +27,6 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 5px 10px 8px 10px;
-  /* background-color: green; */
   width: 100%;
   box-shadow: 1px 1px 2px 1px #757474;
 }
