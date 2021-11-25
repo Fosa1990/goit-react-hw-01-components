@@ -22,15 +22,15 @@
 }
 
 .name {
+  padding-left: 15px;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   font-size: 30px;
-  padding-left: 15px;
 }
 
 .avatar {
-  width: 80px;
   padding-left: 15px;
+  width: 80px;
 }
 
 .statusOnline {
