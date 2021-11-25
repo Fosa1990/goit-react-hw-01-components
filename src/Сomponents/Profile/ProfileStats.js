@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Profile.module.css';
+import PropTypes from 'prop-types';
 
 const ProfileItem = ({ followers, views, likes }) => {
   return (
@@ -18,6 +19,14 @@ const ProfileItem = ({ followers, views, likes }) => {
       </li>
     </ul>
   );
+};
+
+ProfileItem.propTypes = {
+  stats: PropTypes.shape({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
 };
 
 export default ProfileItem;
