@@ -1,5 +1,5 @@
 import React from 'react';
-import TransactionElement from './TransactionElement';
+import TransactionItem from './TransactionItem';
 import styles from './Transactions.module.css';
 
 const TransactionHistory = ({ transactionData }) => {
@@ -13,7 +13,7 @@ const TransactionHistory = ({ transactionData }) => {
         </tr>
       </thead>
 
-      <tbody>{transactionData.map(TransactionElement)}</tbody>
+      <tbody>{transactionData.map(TransactionItem)}</tbody>
     </table>
   );
 };
