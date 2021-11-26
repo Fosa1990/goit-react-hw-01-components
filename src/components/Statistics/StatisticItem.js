@@ -2,16 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 import onRandomColorGenerator from '../../js/generators/onRandomColorGenerator';
-import colorsData from '../../data/colors.json';
 
-const StatisticItem = ({ item }) => {
+const StatisticItem = ({ item, colors }) => {
   return (
     <li
       key={item.id}
       className={styles.item}
       style={{
-        backgroundColor:
-          colorsData[onRandomColorGenerator(0, colorsData.length - 1)],
+        backgroundColor: colors[onRandomColorGenerator(0, colors.length - 1)],
       }}
     >
       <span className={styles.label}>{item.label}</span>
