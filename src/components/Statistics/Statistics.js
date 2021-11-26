@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
-import StatisticElement from './StatisticElement';
+import StatisticItem from './StatisticItem';
 
 const Statistics = ({ title, stats }) => {
   return (
@@ -9,7 +9,7 @@ const Statistics = ({ title, stats }) => {
       {title && <h2 className={styles.title}>Upload stats</h2>}
 
       <ul className={styles.statsList}>
-        {stats.map((item, index) => StatisticElement({ item, index }))}
+        {stats.map(item => StatisticItem({ item }))}
       </ul>
     </section>
   );
