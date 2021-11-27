@@ -21,6 +21,12 @@ const ProfileItem = ({ followers, views, likes }) => {
   );
 };
 
+ProfileItem.defaultProps = {
+  followers: '0',
+  views: '0',
+  likes: '0',
+};
+
 ProfileItem.propTypes = {
   stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
