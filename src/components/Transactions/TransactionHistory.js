@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TransactionItem from './TransactionItem';
 import styles from './Transactions.module.css';
 
@@ -16,6 +17,14 @@ const TransactionHistory = ({ transactionData }) => {
       <tbody>{transactionData.map(TransactionItem)}</tbody>
     </table>
   );
+};
+
+TransactionHistory.defaultProps = {
+  transactionData: [{}],
+};
+
+TransactionHistory.propTypes = {
+  transactionData: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
 };
 
 export default TransactionHistory;
