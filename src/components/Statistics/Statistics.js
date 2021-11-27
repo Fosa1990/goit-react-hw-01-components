@@ -15,13 +15,14 @@ const Statistics = ({ title, stats, colors }) => {
   );
 };
 
+Statistics.defaultProps = {
+  title: 'title',
+  stats: [{}],
+};
+
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.string.isRequired,
-    }),
-  ),
+  stats: PropTypes.arrayOf(PropTypes.shape({}).isRequired).isRequired,
 };
 
 export default Statistics;
