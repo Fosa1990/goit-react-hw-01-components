@@ -19,10 +19,6 @@ const TransactionHistory = ({ transactionData }) => {
   );
 };
 
-TransactionHistory.defaultProps = {
-  transactionData: [{}],
-};
-
 TransactionHistory.propTypes = {
   transactionData: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
 };
