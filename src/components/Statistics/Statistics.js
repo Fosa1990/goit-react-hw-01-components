@@ -17,7 +17,6 @@ const Statistics = ({ title, stats, colors }) => {
 
 Statistics.defaultProps = {
   title: 'title',
-  stats: [{}],
 };
 
 Statistics.propTypes = {
