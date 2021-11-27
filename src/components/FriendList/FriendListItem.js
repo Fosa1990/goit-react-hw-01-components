@@ -14,11 +14,17 @@ const FriendListItem = ({ id, avatar, name, isOnline }) => {
   );
 };
 
+FriendListItem.defaultProps = {
+  avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
+  name: 'unknown user',
+  isOnline: false,
+};
+
 FriendListItem.propTypes = {
+  id: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
-  id: PropTypes.number.isRequired,
 };
 
 export default FriendListItem;
