@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
-import onRandomColorGenerator from '../../js/generators/onRandomColorGenerator';
+import onRandomColorGenerator from '../../helpers/generators/onRandomColorGenerator';
 
 const StatisticItem = ({ item, colors }) => {
   return (
@@ -16,6 +16,11 @@ const StatisticItem = ({ item, colors }) => {
       <span className={styles.percentage}>{item.percentage}%</span>
     </li>
   );
+};
+
+StatisticItem.defaultProps = {
+  label: 'label',
+  percentage: 0,
 };
 
 StatisticItem.propTypes = {
