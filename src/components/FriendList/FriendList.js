@@ -11,10 +11,6 @@ const FriendList = ({ friendsData }) => {
   );
 };
 
-FriendList.defaultProps = {
-  friendsData: [{}],
-};
-
 FriendList.propTypes = {
   friendsData: PropTypes.arrayOf(PropTypes.shape().isRequired).isRequired,
 };
