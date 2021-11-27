@@ -24,9 +24,6 @@ Profile.defaultProps = {
   tag: 'no tag',
   location: 'no location',
   avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-  followers: '0',
-  views: '0',
-  likes: '0',
 };
 
 Profile.propTypes = {
