@@ -1,10 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Profile.module.css';
 import ProfileStats from './ProfileStats';
 
-const Profile = ({ user }) => {
-  const { username, tag, location, avatar, stats } = user;
+const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
@@ -20,20 +18,18 @@ const Profile = ({ user }) => {
 };
 
 Profile.defaultProps = {
-  username: 'unknown user',
-  tag: 'no tag',
-  location: 'no location',
+  username: 'User',
+  tag: 'No tag',
+  location: 'No location',
   avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
 };
 
 Profile.propTypes = {
-  user: PropTypes.shape({
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.shape().isRequired,
-  }).isRequired,
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.shape().isRequired,
 };
 
 export default Profile;
