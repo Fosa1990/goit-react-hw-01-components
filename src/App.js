@@ -8,7 +8,6 @@ import userData from './data/user.json';
 import statisticData from './data/statistics.json';
 import friendListData from './data/friends.json';
 import transactionData from './data/transactions.json';
-import colorsData from './data/colors.json';
 
 function App() {
   return (
@@ -20,11 +19,7 @@ function App() {
         avatar={userData.avatar}
         stats={userData.stats}
       />
-      <Statistics
-        title="Upload stats"
-        stats={statisticData}
-        colors={colorsData}
-      />
+      <Statistics title="Upload stats" stats={statisticData} />
       <FriendList friendsData={friendListData} />
       <TransactionHistory transactionData={transactionData} />
     </Section>

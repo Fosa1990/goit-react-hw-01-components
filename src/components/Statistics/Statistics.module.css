@@ -27,7 +27,8 @@
   justify-content: center;
   padding: 5px 10px 8px 10px;
   width: 100%;
-  color: rgb(235, 236, 218);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 10px black;
   box-shadow: 1px 1px 2px 1px #757474;
 }
 
