@@ -1,10 +1,9 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './FriendList.module.css';
 
-const FriendListItem = ({ id, avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className={styles.item} key={id}>
+    <li className={styles.item}>
       <span
         className={isOnline ? styles.statusOnline : styles.statusOffline}
       ></span>
@@ -16,12 +15,11 @@ const FriendListItem = ({ id, avatar, name, isOnline }) => {
 
 FriendListItem.defaultProps = {
   avatar: 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
-  name: 'unknown user',
+  name: 'User',
   isOnline: false,
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.number.isRequired,
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
