@@ -1,9 +1,8 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 
-const TransactionItem = ({ id, type, amount, currency }) => {
+const TransactionItem = ({ type, amount, currency }) => {
   return (
-    <tr key={id}>
+    <tr>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -12,13 +11,12 @@ const TransactionItem = ({ id, type, amount, currency }) => {
 };
 
 TransactionItem.defaultProps = {
-  type: 'unknown',
-  amount: '0.0',
+  type: 'Unknown',
+  amount: 'NONE',
   currency: 'NONE',
 };
 
 TransactionItem.propTypes = {
-  id: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
   currency: PropTypes.string.isRequired,
