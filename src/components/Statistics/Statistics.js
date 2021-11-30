@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 import StatisticItem from './StatisticItem';
@@ -16,7 +15,7 @@ const Statistics = ({ title, stats, colors }) => {
 };
 
 Statistics.defaultProps = {
-  title: 'title',
+  title: 'Title',
 };
 
 Statistics.propTypes = {
