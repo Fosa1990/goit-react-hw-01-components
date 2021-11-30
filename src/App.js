@@ -13,7 +13,13 @@ import colorsData from './data/colors.json';
 function App() {
   return (
     <Section classNames="userCard">
-      <Profile user={userData} />
+      <Profile
+        username={userData.username}
+        tag={userData.tag}
+        location={userData.location}
+        avatar={userData.avatar}
+        stats={userData.stats}
+      />
       <Statistics
         title="Upload stats"
         stats={statisticData}
