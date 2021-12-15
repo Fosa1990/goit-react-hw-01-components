@@ -21,7 +21,7 @@
   list-style: none;
 }
 
-.statsList li {
+.statsList .item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
